@@ -10,6 +10,10 @@ Scripts to create your own RxTerms Current Prescribable Content database for Pos
 
 For full database creation, see [Releases](https://github.com/ZionDials/RxTerms-PostgreSQL/releases). The releases are only for the SQL creation file and contain **no Data files whatsoever**.
 
+## Warning
+
+As you should always have a primary key with any SQL database, whether it be auto generated or composite, I have used `RXCUI` as the Primary Key (And respective unique constraint) and it works perfectly fine. `RXCUI` as a Primary Key also helps when using this database with another database such as that for [RxNorm](https://github.com/ZionDials/RxNorm-PostgreSQL).
+
 ---
 
 ## Folder Structure
